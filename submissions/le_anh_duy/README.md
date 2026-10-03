@@ -7,9 +7,9 @@
 
 ## Thứ tự chạy
 
-1. Push repo lên GitHub, mở `code/lab_day2.ipynb` trên Colab (Runtime: T4 GPU), *Run all*.
+1. Kaggle (khuyên dùng): *File > Import Notebook* từ GitHub `code/lab_day2.ipynb`, Settings: GPU + Internet On, *Save & Run All (Commit)*. Hoặc Colab (T4 GPU), *Run all*.
 2. Ô đầu tiên clone repo, cài `timm openpyxl`, chạy CI trên CPU: test gốc của repo, `test_code.py` (focal γ=0 ≡ CE, CutMix, gộp BN, temperature, …) và `smoke_notebook.py` (chạy cả notebook trên dữ liệu giả).
-3. Kết quả ghi vào Google Drive `MyDrive/deepweeds_lab/`. Phiên bị ngắt thì chạy lại từ đầu: run đã xong được đọc lại, run đang dở chạy tiếp từ `last.pt`.
+3. Kết quả ghi vào `/kaggle/working/deepweeds_lab` (Kaggle Output) hoặc Google Drive `MyDrive/deepweeds_lab/` (Colab). Phiên bị ngắt thì chạy lại từ đầu: run đã xong được đọc lại, run đang dở chạy tiếp từ `last.pt`.
 4. Ô cuối chép `results.xlsx`, `curves/`, `predictions/`, `figures/` vào thư mục này và tải về `submission.zip`.
 
 Một thí nghiệm lẻ từ dòng lệnh: `python code/train.py --set exp_id=B01 backbone=resnet50 seed=0 images_dir=... labels_dir=...`

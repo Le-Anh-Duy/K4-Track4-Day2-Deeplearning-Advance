@@ -72,7 +72,7 @@ import os
 REPO_DIR = r"{CODE.parents[2]}"; SUB_DIR = r"{d / 'sub'}"; CODE_DIR = r"{CODE}"; ART = r"{d / 'art'}"
 RUNS, PRED, CURVES, EVAL_OUT, FIGS = (f"{{ART}}/{{x}}" for x in ("runs", "predictions", "curves", "eval_out", "figures"))
 for x in (RUNS, PRED, CURVES, EVAL_OUT, FIGS): os.makedirs(x, exist_ok=True)
-DATA = r"{d}"; LABELS_DIR = r"{d / 'labels'}"; IMAGES_DIR = r"{d / 'images'}"
+LOCAL = DATA = r"{d}"; LABELS_DIR = r"{d / 'labels'}"; IMAGES_DIR = r"{d / 'images'}"
 import sys, math, copy, json, shutil, numpy as np, pandas as pd, torch, timm, torch.nn.functional as F
 import matplotlib.pyplot as plt
 from PIL import Image
