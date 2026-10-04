@@ -1,9 +1,28 @@
 # Lab Day 2 — DeepWeeds · Lê Anh Duy
 
-> TODO trước khi nộp: đổi tên thư mục thành `<mssv>_le_anh_duy` (và `SUB_NAME` trong ô đầu notebook), dán link Colab, điền phiên bản thư viện từ `requirements-colab.txt`.
+> TODO trước khi nộp: đổi tên thư mục thành `<mssv>_le_anh_duy` (và `SUB_NAME` trong ô đầu notebook), dán link notebook Kaggle.
 
-- Notebook Colab: `code/lab_day2.ipynb` — link: _TODO_
-- GPU: Colab T4 · seed: 0 (Bước 1–3), 0/1/2 (T00 và chung kết F01)
+- Notebook: `code/lab_day2.ipynb` · đã chạy trên **Kaggle, GPU Tesla T4** · link: _TODO_
+- Thư viện: python 3 (Kaggle), torch 2.11.0+cu128, torchvision 0.26.0, timm 1.0.29, numpy 2.1.3, pandas 2.3.3, scipy 1.16.3 (`requirements-colab.txt`)
+- Seed: 0 cho Bước 1–3; 0/1/2 cho mốc `T00` và chung kết `F01`
+
+## Kết quả
+
+| | macro-F1 test | top-1 test | ECE test | recall Chinee / Snake |
+|---|---|---|---|---|
+| **F01** (ConvNeXt-T + TrivialAug + LS + EMA, TTA 3 tỉ lệ + temperature) | **0,9807 ± 0,0018** | **0,9840 ± 0,0012** | 0,0039 | 95,7% / 95,9% |
+| Mốc T00 + I00 | 0,9693 ± 0,0028 | 0,9760 ± 0,0016 | 0,0099 | 93,8% / 94,9% |
+
+Tự chấm phần I (`eval.py grade`, `eval_out_copy/grade_I.json`): 20/20 (đề xuất). Phân tích đầy đủ ở [`report.md`](report.md), bảng ở `results.xlsx`.
+
+| Thư mục/file | Nội dung |
+|---|---|
+| `report.md` | báo cáo kết luận |
+| `results.xlsx` | Summary, Backbones, Training, Inference, Final, PerClass, Latency |
+| `curves/` | biểu đồ training của mọi run B, T, F (mỗi seed một ảnh) |
+| `figures/` | EDA, ảnh augmentation, overfit 1 batch, đánh đổi backbone/suy luận, ma trận nhầm lẫn, ảnh bị đoán sai |
+| `predictions/` | dự đoán test (và val) của F01, F01uncal, T00, mỗi seed |
+| `eval_out_copy/` | đầu ra `eval.py score/grade` |
 
 ## Thứ tự chạy
 
