@@ -1,6 +1,6 @@
 # Báo cáo Lab Day 2: Backbone, công thức huấn luyện và suy luận trên DeepWeeds
 
-Lê Anh Duy · Kaggle, GPU Tesla T4 · torch 2.11.0+cu128, timm 1.0.29 · mọi số liệu lấy từ `results.xlsx` và `eval_out_copy/` (tính bằng `eval.py` gốc).
+Lê Anh Duy (2A202602723) · Kaggle, GPU Tesla T4 · torch 2.11.0+cu128, timm 1.0.29 · mọi số liệu lấy từ `results.xlsx` và `eval_out_copy/` (tính bằng `eval.py` gốc).
 
 ## 1. Tóm tắt
 
@@ -243,4 +243,4 @@ Recall hai lớp khó: Chinee Apple 95,7% (T00: 93,8%), Snake Weed 95,9% (T00: 9
   - Chung kết: F01 (3 seed) và mốc T00 (3 seed).
 - **Biểu đồ training:** `curves/<exp_id>_<mô tả>.png` cho mọi run B, T, F, mỗi seed một ảnh.
 - **Dự đoán test:** `predictions/F01_seed{0,1,2}_test.csv`, `F01uncal_seed*_test.csv`, `F01_seed*_val.csv`, `T00_seed*_test.csv`. Tự chấm phần I: `eval_out_copy/grade_I.json`.
-- **Notebook:** `code/lab_day2.ipynb` (chạy trên Kaggle, GPU T4). Phiên bản thư viện: `requirements-colab.txt`.
+- **Notebook:** `code/lab_day2.ipynb`, bản đã chạy trên Kaggle (GPU T4): https://www.kaggle.com/code/meowluvmatcha/aitc-lab-cv-2-deepweeds-backbone-training. Phiên bản thư viện: `requirements-colab.txt`.

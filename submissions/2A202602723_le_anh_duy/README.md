@@ -1,8 +1,8 @@
 # Lab Day 2 — DeepWeeds · Lê Anh Duy
 
-> TODO trước khi nộp: đổi tên thư mục thành `<mssv>_le_anh_duy` (và `SUB_NAME` trong ô đầu notebook), dán link notebook Kaggle.
+MSSV: 2A202602723
 
-- Notebook: `code/lab_day2.ipynb` · đã chạy trên **Kaggle, GPU Tesla T4** · link: _TODO_
+- Notebook: `code/lab_day2.ipynb` · đã chạy trên **Kaggle, GPU Tesla T4** · [link Kaggle](https://www.kaggle.com/code/meowluvmatcha/aitc-lab-cv-2-deepweeds-backbone-training)
 - Thư viện: python 3 (Kaggle), torch 2.11.0+cu128, torchvision 0.26.0, timm 1.0.29, numpy 2.1.3, pandas 2.3.3, scipy 1.16.3 (`requirements-colab.txt`)
 - Seed: 0 cho Bước 1–3; 0/1/2 cho mốc `T00` và chung kết `F01`
 
